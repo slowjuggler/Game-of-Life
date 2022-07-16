@@ -1,4 +1,6 @@
-Implementation in the C for Linux Ubuntu of the famous cellular automaton Game Of Life
+Description.
+
+Implementation in the C of the famous cellular automaton Game Of Life
 (https://en.wikipedia.org/wiki/Conway's_Game_of_Life).
 To run the game, download the files from the repository and enter the make command.
 The action takes place on the surface of the torus, a plane of dimensions is chosen for observation.
