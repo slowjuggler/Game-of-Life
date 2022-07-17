@@ -133,18 +133,18 @@ void pressed_key(int *n) {
         *n = (*n) * 2;
     }
     if (c == 'q') {
-		endwin();
-		exit(1);
-	}
+	endwin();
+	exit(1);
+    }
 }
 
 int main(int argc, char *argv[]) {
     int world[MAX_Y][MAX_X] = {0};
     if (argc == 2 && *(char*)argv[1] == 'r') {
 	random_initialization(world);
-	} else if (initialization(world) == 1) {
+    } else if (initialization(world) == 1) {
 		return 1;
-	}
+    }
     int prev_world[MAX_Y][MAX_X] = {0};
     int live_cell = 0;
     int comp;
