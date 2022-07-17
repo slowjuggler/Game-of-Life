@@ -33,9 +33,9 @@ void random_initialization(int world[][MAX_X]) {
     srand(time(NULL));
     for (int i = 0; i < MAX_Y; i++) {
         for (int j = 0; j < MAX_X; j++) {
-			int n = rand();
+		int n = rand();
             if (n % 2) {
-				world[i][j] =1;
+		world[i][j] =1;
 			}
         }
     }
@@ -141,7 +141,7 @@ void pressed_key(int *n) {
 int main(int argc, char *argv[]) {
     int world[MAX_Y][MAX_X] = {0};
     if (argc == 2 && *(char*)argv[1] == 'r') {
-		random_initialization(world);
+	random_initialization(world);
 	} else if (initialization(world) == 1) {
 		return 1;
 	}
