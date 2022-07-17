@@ -10,4 +10,5 @@ To use ready-made tables, set one of the files located in the directory (for exa
 Importantly, the program uses the ncurses library. If you don't have it installed, you can do it 
 (if you have Debian and Ubuntu $sudo apt-get install ncurses-dev).
 To control the speed, use '+' and '-', to exit enter 'q'.
+
 Observing the creation and destruction, we return again and again to the laws of Nature.
