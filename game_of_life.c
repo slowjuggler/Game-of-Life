@@ -36,7 +36,7 @@ void random_initialization(int world[][MAX_X]) {
 		int n = rand();
             if (n % 2) {
 		world[i][j] =1;
-			}
+	    }
         }
     }
 }
@@ -48,7 +48,7 @@ void output(int world[][MAX_X]) {
                 printw("*");
             } else {
                 printw(" ");
-                }
+            }
             if (j == MAX_X - 1) {
                 printw("\n");
             }
@@ -67,10 +67,8 @@ void next_generation(int world[][MAX_X], int prev_world[][MAX_X]) {
                 if (status_nb == 3) {
                     world[i][j] = 1;
                 }
-            } else {
-                if (status_nb < 2 || status_nb > 3) {
+            } else if (status_nb < 2 || status_nb > 3) {
                     world[i][j] = 0;
-                }
             }
         }
     }
